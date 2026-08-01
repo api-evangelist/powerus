@@ -1,8 +1,29 @@
 aid: powerus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/powerus.png
 name: Powerus
-description: Powerus is a company surfaced as a portfolio company of general-catalyst, hv-capital and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  PowerUs is Germany's largest job platform for skilled trades and crafts,
+  connecting tradespeople (electricians, plumbers, roofers, metalworkers,
+  mechanics and more) with employers across construction, electrical and
+  mechanical industries. The platform offers automated job matching based on
+  location, salary and working conditions, one-click applications without cover
+  letters, direct employer-to-worker discovery, and native iOS and Android apps.
+  PowerUs reports 250,000+ registered skilled workers and 6,000+ open positions.
+  It is a consumer/employer marketplace product and does not currently expose a
+  public developer API, developer portal, or OpenAPI-described API surface; its
+  api.powerus.de and docs.powerus.de hosts are private/internal (docs gated
+  behind Cloudflare Access). Backed by General Catalyst and HV Capital.
 url: https://raw.githubusercontent.com/api-evangelist/powerus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +34,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Jobs
+- Recruitment
+- Marketplace
+- Skilled Trades
+- Employment
+- HR Tech
+- Germany
 apis: []
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+common:
+- type: Website
+  url: https://powerus.de/
+- type: Login
+  url: https://partner.powerus.de/login
+- type: DomainSecurity
+  url: security/powerus-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
